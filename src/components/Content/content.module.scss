@@ -7,15 +7,30 @@
         .line{
             height: 1px;
             width: 100%;
-            background-color: white;
+            background-color: #F7F7F7;
+            opacity: 0.086;
         }
         p{
             width: 150%;
             text-align: center;
+            color: #B9B9B9;
+            font-family: 'Avenir Thin';
+            font-size: 10px;
+            text-transform: uppercase;
         }
     }
     .headline{
         color: white;
         text-align: center;
+        h1{
+            font-family: 'Avenir Black';
+            font-size: 36px;
+            margin-bottom: 0px;
+        }
+        p{
+            font-family: 'Avenir Thin';
+            color: #FFFFFF;
+            font-size: 16px;
+        }
     }
 }

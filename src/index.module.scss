@@ -1,9 +1,17 @@
 @font-face {
-  font-family: 'Avenir';
+  font-family: 'Avenir Normal';
+  src: local('Avenir'), url(./assets/fonts/AvenirLTStd-Roman.otf) format('truetype');
+}
+@font-face {
+  font-family: 'Avenir Thin';
   src: local('Avenir'), url(./assets/fonts/AvenirLTStd-Book.otf) format('truetype');
 }
+@font-face {
+  font-family: 'Avenir Black';
+  src: local('Avenir'), url(./assets/fonts/AvenirLTStd-Black.otf) format('truetype');
+}
 body {
-  font-family: 'Avenir';
+  font-family: 'Avenir Thin', 'Avenir Black';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url("./assets/bg.png");

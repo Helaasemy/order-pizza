@@ -1,25 +1,41 @@
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+$breakpoint-big: 3000px;
+
+
 .wrapper {
     color: white;
     .fieldset{
+        margin: 0 10vw;
         fieldset{
             display: flex;
             justify-content: space-around;
+            border: 1px solid rgba(247,247,247, .2);
+            
             legend {
                 padding: 0px 30px;
+                color: #B9B9B9;
+                font-size: 12px;
+                text-transform: uppercase;
+
+
+            }
+            span{
+                color: #D6D6D6;
+                font-family: 'Avenir Black';
+                font-size: 12px;
+                cursor: pointer;
             }
             .active {
                 display: inline-block;
+                color: #C22700;
                  position: relative;
                  &::before {
                     content: '•';
                     display: inline-block;
-                
-                    /* position the dot underneath the character */
                     position: absolute;
-                    bottom: -1.1em;
+                    bottom: -1.6em;
                     left: 0;
-                
-                    /* center the dot horizontally */
                     text-align: center;
                     width: 100%;
                  }
@@ -37,6 +53,17 @@
             position: absolute;
             width: 100vw;
             bottom: 0;
+            @media (min-width: $breakpoint-tablet) {
+                width: 100vw;
+            }
+            @media (min-width: $breakpoint-desktop) {
+                width: 25vw;
+                left: 37vw;
+            }
+            @media (min-width: $breakpoint-big) {
+                width: 30vw;
+            }
         }
+        
     }
 }
