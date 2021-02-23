@@ -1,0 +1,42 @@
+.wrapper {
+    color: white;
+    .fieldset{
+        fieldset{
+            display: flex;
+            justify-content: space-around;
+            legend {
+                padding: 0px 30px;
+            }
+            .active {
+                display: inline-block;
+                 position: relative;
+                 &::before {
+                    content: '•';
+                    display: inline-block;
+                
+                    /* position the dot underneath the character */
+                    position: absolute;
+                    bottom: -1.1em;
+                    left: 0;
+                
+                    /* center the dot horizontally */
+                    text-align: center;
+                    width: 100%;
+                 }
+            }
+        }
+    }
+    .price {
+        text-align: center;
+        img{ 
+            margin-top: -2.2rem;
+        }
+    }
+    .pizza{
+        img {
+            position: absolute;
+            width: 100vw;
+            bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.wrapper {
+    color: white;
+    .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .line{
+            height: 1px;
+            width: 100%;
+            background-color: white;
+        }
+        p{
+            width: 150%;
+            text-align: center;
+        }
+    }
+    .headline{
+        color: white;
+        text-align: center;
+    }
+}
